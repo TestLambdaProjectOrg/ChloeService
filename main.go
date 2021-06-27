@@ -16,7 +16,7 @@ type MyEvent struct {
 
 func HandleRequest(ctx context.Context, param MyEvent) (string, error) {
 
-	return fmt.Sprintf("Hello to Chloe: %s. You are in %s", param, appEnv), nil
+	return fmt.Sprintf("Hello to Chloe. Event: %s. You are in %s", param, appEnv), nil
 }
 
 func main() {
